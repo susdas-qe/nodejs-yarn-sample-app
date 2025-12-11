@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-yarn-sample-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/susdas-qe/nodejs-yarn-sample-app.git",
+  "author": "Sushanta Das <sushanta.das.ju@gmail.com>",
+  "license": "ISC",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
