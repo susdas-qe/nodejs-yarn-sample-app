@@ -12,4 +12,6 @@ RUN yarn install
 
 COPY app.js ./
 
+EXPOSE 3000
+
 CMD ["yarn", "start"]
