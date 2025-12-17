@@ -3,7 +3,7 @@ FROM registry.access.redhat.com/ubi10/nodejs-22@sha256:11a7e442c26772f6c0e90f8a3
 
 USER 0
 WORKDIR /app
-RUN chown -R 1001:1001 /app
+RUN chown -R 1001:0 /app
 
 COPY --chown=1001:0 yarn-install/ yarn-install/
 
