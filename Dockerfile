@@ -7,7 +7,9 @@ RUN chown -R 1001:1001 /app
 COPY package.json ./
 COPY yarn.lock ./
 
-RUN npm install -g yarn
+COPY --chown=1001:0 yarn-install/ yarn-install/
+
+RUN cd yarn-install && npm install --offline && cd -
 
 RUN yarn install
 
